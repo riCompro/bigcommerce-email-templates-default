@@ -1,0 +1,39 @@
+<html><body style="font-family:Arial; font-size:12px">
+	<div style="padding:0px 20px 20px 20px">
+		<h2 style="font-size:22px; padding-bottom:4px; color:#cc6600; border-bottom:dashed 1px gray">Confirmation for Return Request for Order ID #%%GLOBAL_OrderId%%</h2>
+		<div style="width:100%; padding:10px; background-color:#FFF4EA">
+			<img src="https://cdn11.bigcommerce.com/r-3b68d717e18793df0b51c71e16bc24664ad18b7c/themes/ClassicNext/images/InfoMessage.gif" /> 
+			A summary of your return is shown below. To view the status of this return <a href="%%GLOBAL_ShopPath%%/account.php?view=returns">click here</a>.
+		</div>
+
+		
+
+
+		<table width="100%" cellspacing="0" cellpadding="4">
+			<tr>
+				<td style="font-family:Arial; font-size: 12px; font-weight: bold;" nowrap="nowrap" width="25%">Return Reason:</td>
+				<td style="font-family:Arial; font-size: 12px;">%%GLOBAL_ReturnReason%%</td>
+			</tr>
+			<tr style="display: %%GLOBAL_HideReturnAction%%">
+				<td style="font-family:Arial; font-size: 12px; font-weight: bold;" nowrap="nowrap" width="25%">Return Action:</td>
+				<td style="font-family:Arial; font-size: 12px;">%%GLOBAL_ReturnAction%%</td>
+			</tr>
+			<tr>
+				<td style="font-family:Arial; font-size: 12px; font-weight: bold;" nowrap="nowrap" valign="top">Your Comments:</td>
+				<td style="font-family:Arial; font-size: 12px;">%%GLOBAL_ReturnComments%%</td>
+			</tr>
+		</table>
+
+		<h3 style="font-size:13px; color:#cc6600;">Your Return Request Contains the Following Items...</h3>
+		<table width="100%" id="CheckoutCartGrid" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="font-family:Arial; font-size:12px; background-color:#020B6F; color:white; padding:5px; font-weight:bold" nowrap>Return Items</td>
+				<td style="font-family:Arial; font-size:12px; background-color:#020B6F; color:white; padding:5px; font-weight:bold" nowrap="nowrap" width="120">Qty</td>
+			</tr>
+		</table>
+		%%SNIPPET_ReturnItems%%
+
+		%%GLOBAL_EmailFooter%%
+	</div>
+</body>
+</html>
